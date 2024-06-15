@@ -9,15 +9,20 @@ class HomeScreen extends StatelessWidget {
     final c = Get.put(HomeController());
     return Scaffold(
       appBar: AppBar(),
-      body: Column(
-        children: [
-          const Text(
-            "how many times you clicked",
+      body: Obx(
+        () => Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text(
+                "how many times you clicked",
+              ),
+              Text(
+                c.count.value.toString(),
+              )
+            ],
           ),
-          Text(
-            c.count.value.toString(),
-          )
-        ],
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: c.increment,
