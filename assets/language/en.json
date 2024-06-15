@@ -1,0 +1,36 @@
+{
+    "onboarding": {
+      "next": "NEXT",
+      "onboardingText0": "The fun that you are searching for is here and there is a but",
+      "onboardingText1": "The fun that you are searching for is here and there is a but",
+      "onboardingText2": "The fun that you are searching for is here and there is a but",
+      "getStarted": "GET STARTED",
+      "haveAccount": "I ALREADY HAVE AN ACCOUNT"
+    },
+    "signIn": {
+      "email": "Email",
+      "password": "Password",
+      "signIn": "SIGN IN",
+      "or": "OR",
+      "forgotLogin": "Forgot your login details? ",
+      "getHelpLogin": "Get help logging in.",
+      "dontHaveAccount": "Don’t have an account? ",
+      "signUp": "Sign Up",
+      "emailErrorText": "Please make sure you wrote correct email."
+    },
+    "signUp": {
+      "email": "Email",
+      "password": "Password",
+      "emailErrorText": "Please make sure you wrote correct email.",
+      "anonymous": "Do you want to continue anonymously? ",
+      "goAnonymous": "Continue anonymously.",
+      "emailAndUserName": "Please make sure you entered your Email and Username.",
+      "passwordAgain": "Confirm Password",
+      "signUp": "SIGN UP",
+      "or": "OR",
+      "userName": "Username",
+      "haveAccount": "Already have an account? ",
+      "login": "Login here.",
+      "errorPasswordAgain": "Please make sure you entered the same password"
+    }
+  }
