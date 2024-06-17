@@ -12,18 +12,25 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-          backgroundColor: Colors.white,
-          body: Column(children: [
-            Padding(
-              padding: AppPaddings.generalWidth,
-              child: Row(
-                children: [
-                  const SearchBarWidget(),
-                  _buildSettingsIcon(),
-                ],
+        backgroundColor: Colors.white,
+        body: Padding(
+          padding: AppPaddings.generalHeight,
+          child: Column(
+            children: [
+              Padding(
+                padding: AppPaddings.generalWidth,
+                child: Row(
+                  children: [
+                    _buildSearchBar(),
+                    20.horizontalSpace,
+                    _buildSettingsIcon(),
+                  ],
+                ),
               ),
-            ),
-          ])),
+            ],
+          ),
+        ),
+      ),
     );
   }
 
@@ -31,40 +38,21 @@ class HomeScreen extends StatelessWidget {
     return SizedBox(
       width: 36.h,
       height: 36.h,
-      child: IconButton(
-          onPressed: () {}, icon: Image.asset("assets/images/stttngs.png")),
+      child: GestureDetector(
+        onTap: () {},
+        child: Image.asset("assets/images/stttngs.png"),
+      ),
     );
   }
-}
 
-/* class Settings extends StatelessWidget {
-  const Settings({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.fromLTRB(0, 67.h, 20.w, 0),
-      child: 
-    );
-  }
-} */
-
-class SearchBarWidget extends StatelessWidget {
-  const SearchBarWidget({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
+  Widget _buildSearchBar() {
     return SizedBox(
       width: 279.w,
       height: 36.h,
-      child: const SearchBar(
+      child: SearchBar(
         leading: Padding(
-          padding: const EdgeInsets.only(left: 10),
-          child: Icon(
+          padding: EdgeInsets.only(left: 10.w),
+          child: const Icon(
             Icons.search,
             size: 28,
           ),

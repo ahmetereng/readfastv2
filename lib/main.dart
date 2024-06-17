@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 //import 'package:readfastv2/constants/colors.dart';
 import 'package:readfastv2/constants/routes.dart';
 import 'package:readfastv2/screens/home/home_screen.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
@@ -40,7 +41,6 @@ class ReadFast extends StatelessWidget {
             name: Routes.home,
             page: () => const HomeScreen(),
           ),
-          
         ],
       ),
     );
